@@ -5,17 +5,20 @@ using namespace std;
 int tinggiPiramida;
 
 int main() {
-
+	// menginput angka
 	cout << "Masukan jumlah angka: ";
 	cin >> tinggiPiramida;
 
+	// melakukan pembentukan piramida
 	for (int i = 1; i <= tinggiPiramida; i++) {
 
 		for (int j = 1; j <= tinggiPiramida - i; j++) {
+			// spasi dalam piramida
 			cout << " ";
 		}
 
 		for (int k = 1; k <= i; k++) {
+			// simbol yang membentuk piramida
 			cout << " ^";
 		}
 		cout << endl;
